@@ -3,7 +3,6 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
@@ -29,11 +28,7 @@ const Navbar = () => {
 
           <div className="item">
             <NotificationsNoneOutlinedIcon className="icon" />
-            <div className="counter">1</div>
-          </div>
-          <div className="item">
-            <ChatBubbleOutlineOutlinedIcon className="icon" />
-            <div className="counter">2</div>
+            <div className="counter">31</div>
           </div>
           <div className="item">
             <ListOutlinedIcon className="icon" />
