@@ -34,6 +34,7 @@ app.use("/api/users", usersRoute);
 app.use("/api/hotels", hotelsRoute);
 app.use("/api/rooms", roomsRoute);
 
+
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;
   const errorMessage = err.message || "Something went wrong!";
@@ -43,6 +44,15 @@ app.use((err, req, res, next) => {
     message: errorMessage,
     stack: err.stack,
   });
+});
+
+
+app.post('/api/register', (req, res) => {
+  const formData = req.body;
+  // Handle the received form data (e.g., save to a database)
+  console.log('Received form data:', formData);
+  // Send a response back to the client if needed
+  res.status(200).json({ message: 'Registration successful' });
 });
 
 app.listen(8800, () => {

@@ -41,10 +41,7 @@ function App() {
               }
             />
             <Route path="users">
-              <Route
-                index
-                element={
-                  <ProtectedRoute>
+              <Route index element={<ProtectedRoute>
                     <List columns={userColumns} />
                   </ProtectedRoute>
                 }

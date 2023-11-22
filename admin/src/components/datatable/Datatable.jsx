@@ -53,7 +53,8 @@ const Datatable = ({columns}) => {
           Add New
         </Link>
       </div>
-      <DataGrid
+      {data.length>0 &&
+       <DataGrid
         className="datagrid"
         rows={list}
         columns={columns.concat(actionColumn)}
@@ -61,7 +62,9 @@ const Datatable = ({columns}) => {
         rowsPerPageOptions={[9]}
         checkboxSelection
         getRowId={(row) => row._id}
-      />
+      /> 
+      }
+
     </div>
   );
 };
