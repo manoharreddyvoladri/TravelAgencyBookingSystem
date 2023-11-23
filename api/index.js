@@ -51,7 +51,7 @@ app.post('/api/register', (req, res) => {
   const formData = req.body;
   // Handle the received form data (e.g., save to a database)
   console.log('Received form data:', formData);
-  // Send a response back to the client if needed
+
   res.status(200).json({ message: 'Registration successful' });
 });
 
